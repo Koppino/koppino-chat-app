@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "https://koppino-chat-app.onrender.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
