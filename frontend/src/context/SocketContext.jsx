@@ -9,7 +9,7 @@ export const useSocketContext = () => {
 };
 
 export const SocketContextProvider = ({ children }) => {
-  const [socket, setSocket] = useState();
+  const [socket, setSocket] = useState("null");
   const [onlineUsers, setOnlineUsers] = useState([]);
   const { authUser } = useAuthContext();
   useEffect(() => {
@@ -27,7 +27,7 @@ export const SocketContextProvider = ({ children }) => {
       return () => socket.close();
     } else {
       socket.close();
-      setSocket();
+      setSocket("null");
     }
   }, [authUser]);
   return (
