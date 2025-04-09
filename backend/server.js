@@ -22,9 +22,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors(corsOptions));
 
-app.get("/", (req, res) => {
-  res.send("root route");
-});
+// app.get("/", (req, res) => {
+//   res.send("root route");
+// });
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
