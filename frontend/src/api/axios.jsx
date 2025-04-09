@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:1337/api/";
+const BASE_URL = "https://koppino-chat-app.onrender.com/api/";
 
 export default axios.create({
   baseURL: BASE_URL,
