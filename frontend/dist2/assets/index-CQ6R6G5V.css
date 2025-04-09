@@ -1117,6 +1117,12 @@
         height: .125rem
     }
 
+    @supports (color:color-mix(in lab, red, red)) {
+        :is() {
+            background-color: color-mix(in oklab, var(--color-base-content)10%, transparent)
+        }
+    }
+
     @media print {
 
         .divider:before,
